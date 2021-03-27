@@ -7,9 +7,8 @@ ruby '2.7.2'
 gem 'rails', '~> 6.1.3'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
 gem 'gravatar_image_tag'
-gem 'gravatar-ultimate', '~> 2.0'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
@@ -18,7 +17,6 @@ group :development, :test do
  group :production do
    gem 'pg'
  end
- 
 #gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
@@ -33,7 +31,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

@@ -7,7 +7,8 @@ ruby '2.7.2'
 gem 'rails', '~> 6.1.3'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'bcrypt', '~> 3.1.16'
+gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
+gem 'gravatar_image_tag'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server

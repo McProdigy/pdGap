@@ -9,8 +9,17 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'bcrypt-ruby', '3.1.5', :require => 'bcrypt'
 gem 'gravatar_image_tag'
+gem 'gravatar-ultimate', '~> 2.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+group :development, :test do
+  gem 'sqlite3'
+ end
+ 
+ group :production do
+   gem 'pg'
+ end
+ 
+#gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets

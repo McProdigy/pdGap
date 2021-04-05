@@ -8,6 +8,10 @@ gem 'rails', '~> 6.1.3'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'gravatar_image_tag'
+gem 'jquery-rails'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
